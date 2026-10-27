@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>LUMIÈRE | Lentes de Contacto</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500&family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/estilos/styles.css">
+</head>
+<body>
+
+<!-- 1. BARRA DE ANUNCIO -->
+<div class="anuncio">Nueva colección 2026 · Descubre los tonos Ámbar Noir</div>
+
+<!-- 2. HEADER -->
+<header>
+  <div class="header-top">
+    <div>
+      <button class="icono-btn menu-toggle" aria-label="Abrir menú" onclick="document.querySelector('nav.principal').classList.toggle('abierto')">
+        <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M3 6h18M3 12h18M3 18h18"/></svg>
+      </button>
+    </div>
+    <a href="#" class="logo">LUMIÈRE</a>
+    <div class="utilidades">
+      <a href="#contacto" class="txt">Contacto</a>
+      <a href="#" class="icono-btn" aria-label="Instagram"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r=".8" fill="currentColor"/></svg></a>
+    </div>
+  </div>
+  <nav class="principal">
+    <ul>
+      <li><a href="#coleccion">Colección</a></li>
+      <li><a href="#tipos">Tipos de lente</a></li>
+      <li><a href="#tecnologia">Tecnología</a></li>
+      <li><a href="#tonos">Tonos</a></li>
+      <li><a href="#contacto">Contacto</a></li>
+    </ul>
+  </nav>
+</header>
+
+<!-- 3. HERO CARRUSEL -->
+<section class="hero" aria-label="Destacados">
+  <div class="slide s1 activo">
+    <div class="fondo"></div><div class="iris"></div>
+    <div class="hero-texto">
+      <div class="eyebrow">Nueva colección</div>
+      <h1>Ámbar Noir</h1>
+      <p>Tonos miel y avellana que transforman la mirada con un acabado natural.</p>
+      <a href="#coleccion" class="btn btn--claro">Descubrir</a>
+    </div>
+  </div>
+  <div class="slide s2">
+    <div class="fondo"></div><div class="iris"></div>
+    <div class="hero-texto">
+      <div class="eyebrow">Hidratación 16 h</div>
+      <h1>Azul Glaciar</h1>
+      <p>Comodidad absoluta de la mañana a la noche, con tecnología de silicona hidrogel.</p>
+      <a href="#coleccion" class="btn btn--claro">Descubrir</a>
+    </div>
+  </div>
+  <div class="slide s3">
+    <div class="fondo"></div><div class="iris"></div>
+    <div class="hero-texto">
+      <div class="eyebrow">Visión esencial</div>
+      <h1>Claridad Diaria</h1>
+      <p>Lentes de uso diario, desechables y ultradelgados. Ponlos y olvídate.</p>
+      <a href="#coleccion" class="btn btn--claro">Descubrir</a>
+    </div>
+  </div>
+  <div class="hero-controles">
+    <button id="prev" aria-label="Anterior">‹</button>
+    <span id="indice">1 / 3</span>
+    <button id="next" aria-label="Siguiente">›</button>
+  </div>
+</section>
+
+<!-- 4. COLECCIÓN (vitrina, sin precios) -->
+<section class="seccion" id="coleccion">
+  <div class="contenedor">
+    <div class="seccion-cabecera">
+      <h2 class="titulo-seccion">La colección</h2>
+      <span class="enlace-sub">Elige un tono para verlo</span>
+    </div>
+    <div class="grid-productos" id="grid"></div>
+  </div>
+</section>
+
+<!-- 5. TIPOS DE LENTE -->
+<section class="categorias" id="tipos">
+  <div class="cat"><div class="fondo"></div>
+    <div class="cat-texto"><h3>Diarios</h3><p>Frescura en cada apertura. Un par nuevo para el ritmo de todos los días.</p></div></div>
+  <div class="cat"><div class="fondo"></div>
+    <div class="cat-texto"><h3>De color</h3><p>Una paleta de tonos que realzan tu mirada con naturalidad o intensidad.</p></div></div>
+  <div class="cat"><div class="fondo"></div>
+    <div class="cat-texto"><h3>Mensuales</h3><p>Resistencia y comodidad durante todo el mes, con el cuidado adecuado.</p></div></div>
+</section>
+
+<!-- 6. EDITORIAL / TECNOLOGÍA -->
+<section class="editorial" id="tecnologia">
+  <div class="editorial-img"><div class="iris"></div></div>
+  <div class="editorial-texto">
+    <div class="eyebrow" style="color:var(--acento)">La ciencia de la mirada</div>
+    <h2>Diseñados para verse.<br>Hechos para sentirse.</h2>
+    <p>Cada lente LUMIÈRE combina materiales de alta permeabilidad al oxígeno con un diseño de borde ultrafino, para una visión nítida y una comodidad que casi no notarás.</p>
+    <div class="beneficios">
+      <div><strong>98%</strong><span>Oxígeno</span></div>
+      <div><strong>16 h</strong><span>Hidratación</span></div>
+      <div><strong>UV</strong><span>Protección</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- 7. TONOS -->
+<section class="colecciones" id="tonos">
+  <div><h4>Miel Dorada</h4><span>Tono</span></div>
+  <div><h4>Gris Humo</h4><span>Tono</span></div>
+  <div><h4>Verde Jade</h4><span>Tono</span></div>
+  <div><h4>Avellana</h4><span>Tono</span></div>
+</section>
+
+<!-- 8. FOOTER / CONTACTO -->
+<footer id="contacto">
+  <div class="contenedor">
+    <div class="footer-grid">
+      <div>
+        <div class="footer-logo">LUMIÈRE</div>
+        <p style="max-width:280px;margin-bottom:20px">Lentes de contacto de diseño para una mirada auténtica.</p>
+        <div class="redes">
+          <a href="#" aria-label="Instagram"><svg viewBox="0 0 24 24"><path d="M12 7a5 5 0 100 10 5 5 0 000-10zm0 8.2A3.2 3.2 0 1112 8.8a3.2 3.2 0 010 6.4zM17.3 5.5a1.2 1.2 0 100 2.4 1.2 1.2 0 000-2.4zM12 2c-2.7 0-3 0-4.1.1C4 2.3 2.3 4 2.1 7.9 2 9 2 9.3 2 12s0 3 .1 4.1c.2 3.9 1.9 5.6 5.8 5.8 1.1.1 1.4.1 4.1.1s3 0 4.1-.1c3.9-.2 5.6-1.9 5.8-5.8.1-1.1.1-1.4.1-4.1s0-3-.1-4.1C21.7 4 20 2.3 16.1 2.1 15 2 14.7 2 12 2z"/></svg></a>
+          <a href="#" aria-label="Facebook"><svg viewBox="0 0 24 24"><path d="M14 8V6c0-.8.5-1 1-1h2V2h-3c-3 0-4 2-4 4v2H8v3h2v11h4V11h3l.5-3H14z"/></svg></a>
+          <a href="#" aria-label="TikTok"><svg viewBox="0 0 24 24"><path d="M16 2h-3v13.5a2.5 2.5 0 11-2.5-2.5V10a5.5 5.5 0 105.5 5.5V8.5A7 7 0 0020 10V7a4 4 0 01-4-4V2z"/></svg></a>
+        </div>
+      </div>
+      <div><h5>Explora</h5><ul><li><a href="#coleccion">Colección</a></li><li><a href="#tipos">Tipos de lente</a></li><li><a href="#tecnologia">Tecnología</a></li><li><a href="#tonos">Tonos</a></li></ul></div>
+      <div><h5>Contacto</h5><ul><li><a href="mailto:hola@tumarca.com">hola@tumarca.com</a></li><li><a href="#">Instagram</a></li><li><a href="#">WhatsApp</a></li></ul></div>
+      <div><h5>Legal</h5><ul><li><a href="#">Aviso de privacidad</a></li><li><a href="#">Uso bajo prescripción</a></li></ul></div>
+    </div>
+    <div class="footer-bajo">
+      <span>© 2026 LUMIÈRE. Todos los derechos reservados.</span>
+      <span>Consulta a tu especialista de la visión antes de usar lentes de contacto.</span>
+    </div>
+  </div>
+</footer>
+
+<script>
+/* ---------- Carrusel hero ---------- */
+const slides=[...document.querySelectorAll('.slide')];
+const indice=document.getElementById('indice');
+let actual=0,timer;
+function ir(n){
+  slides[actual].classList.remove('activo');
+  actual=(n+slides.length)%slides.length;
+  slides[actual].classList.add('activo');
+  indice.textContent=`${actual+1} / ${slides.length}`;
+  reiniciar();
+}
+function reiniciar(){clearInterval(timer);timer=setInterval(()=>ir(actual+1),6000)}
+document.getElementById('next').onclick=()=>ir(actual+1);
+document.getElementById('prev').onclick=()=>ir(actual-1);
+reiniciar();
+
+/* ---------- Colección (edita este arreglo) ----------
+   tonos: [nombre del tono, color claro, color oscuro] */
+const productos=[
+  {nombre:'Ámbar Noir',desc:'Lentes de color · Reemplazo mensual',badge:'Nuevo',
+   tonos:[['Miel','#c69a5a','#6b4423'],['Avellana','#9c7b4e','#4a3220'],['Dorado','#d9b27a','#7a5530']]},
+  {nombre:'Azul Glaciar',desc:'Lentes de color · Reemplazo mensual',badge:'',
+   tonos:[['Glaciar','#7fb6d6','#2c5872'],['Océano','#5f8fb0','#1f3c52'],['Cielo','#a9cfe4','#3d6d8a']]},
+  {nombre:'Claridad Diaria',desc:'Transparentes · Uso diario · Graduables',badge:'',
+   tonos:[['Transparente','#d9e3ea','#9fb2c0']]},
+  {nombre:'Verde Jade',desc:'Lentes de color · Reemplazo mensual',badge:'Edición limitada',
+   tonos:[['Jade','#7fae8a','#2f5a3a'],['Oliva','#a3c49a','#4f6e3e']]},
+];
+const grid=document.getElementById('grid');
+productos.forEach(p=>{
+  const el=document.createElement('article');
+  el.className='producto';
+  el.innerHTML=`
+    <div class="producto-img">
+      ${p.badge?`<span class="badge">${p.badge}</span>`:''}
+      <div class="mini-iris" style="--c1:${p.tonos[0][1]};--c2:${p.tonos[0][2]}"></div>
+    </div>
+    <h3>${p.nombre}</h3>
+    <div class="desc">${p.desc}</div>
+    <div class="swatches">${p.tonos.map((t,j)=>`<span class="${j===0?'sel':''}" title="${t[0]}" data-nombre="${t[0]}" data-c1="${t[1]}" data-c2="${t[2]}" style="background:radial-gradient(circle,${t[1]},${t[2]})"></span>`).join('')}</div>
+    <div class="tono-nombre">Tono: <strong>${p.tonos[0][0]}</strong></div>`;
+  // cambio de tono
+  el.querySelectorAll('.swatches span').forEach(s=>s.onclick=()=>{
+    el.querySelectorAll('.swatches span').forEach(x=>x.classList.remove('sel'));
+    s.classList.add('sel');
+    const iris=el.querySelector('.mini-iris');
+    iris.style.setProperty('--c1',s.dataset.c1);iris.style.setProperty('--c2',s.dataset.c2);
+    el.querySelector('.tono-nombre strong').textContent=s.dataset.nombre;
+  });
+  grid.appendChild(el);
+});
+
+</script>
+</body>
+</html>
