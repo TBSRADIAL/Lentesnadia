@@ -256,5 +256,5 @@ nav.principal a.nav-halloween:hover{border-color:var(--hw-rojo)}
 }
 
 /* Logo de la colección Halloween */
-.hw-logo{width:clamp(200px,22vw,320px);height:auto;margin-bottom:28px;filter:drop-shadow(0 0 24px rgba(120,90,220,.35))}
-@media (max-width:768px){ .hw-logo{margin:0 auto 24px} }
+.hw-logo{display:block;width:clamp(200px,20vw,300px);max-width:100%;height:auto;margin:0 0 36px;filter:drop-shadow(0 0 24px rgba(120,90,220,.35))}
+@media (max-width:768px){ .hw-logo{margin:0 auto 28px} }
