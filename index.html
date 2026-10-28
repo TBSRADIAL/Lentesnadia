@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title> NADIA | Lentes de Contacto</title>
+<title>NADIA | Lentes de Contacto</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500&family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="estilos/styles.css">
@@ -11,7 +11,7 @@
 <body>
 
 <!-- 1. BARRA DE ANUNCIO -->
-<div class="anuncio">Nueva colección 2026 · Descubre los tonos Ámbar Noir</div>
+<a href="#halloween" class="anuncio">Halloween Edition · 104 diseños de efectos especiales · Descúbrelos</a>
 
 <!-- 2. HEADER -->
 <header>
@@ -30,6 +30,7 @@
   <nav class="principal">
     <ul>
       <li><a href="#coleccion">Colección</a></li>
+      <li><a href="#halloween" class="nav-halloween">Halloween</a></li>
       <li><a href="#tipos">Tipos de lente</a></li>
       <li><a href="#tecnologia">Tecnología</a></li>
       <li><a href="#tonos">Tonos</a></li>
@@ -74,7 +75,7 @@
   </div>
 </section>
 
-<!-- 4. COLECCIÓN (vitrina, sin precios) -->
+<!-- 3b. COLECCIÓN (vitrina, sin precios) -->
 <section class="seccion" id="coleccion">
   <div class="contenedor">
     <div class="seccion-cabecera">
@@ -82,6 +83,43 @@
       <span class="enlace-sub">Elige un tono para verlo</span>
     </div>
     <div class="grid-productos" id="grid"></div>
+  </div>
+</section>
+
+<!-- 4. HALLOWEEN EDITION -->
+<section class="halloween" id="halloween">
+  <div class="hw-banner">
+    <div class="hw-foto"><img src="img/halloween/banner.jpg" alt="Modelo con lentes de contacto White Out"></div>
+    <div class="hw-intro">
+      <div class="eyebrow hw-eyebrow">Edición especial</div>
+      <h2>Halloween<br><em>Edition</em></h2>
+      <p>Diseños de efectos especiales para transformar tu mirada: ojos de gato, esclera completa, vampiros, zombies y más. Hechos en Corea.</p>
+      <div class="hw-datos">
+        <div><strong>104</strong><span>Diseños</span></div>
+        <div><strong>22 mm</strong><span>Esclera completa</span></div>
+        <div><strong>15 mm</strong><span>Iris grande</span></div>
+      </div>
+      <a href="#catalogo" class="btn btn--rojo">Ver catálogo interactivo</a>
+    </div>
+  </div>
+
+  <div class="contenedor hw-cuerpo">
+    <div class="seccion-cabecera">
+      <h3 class="titulo-seccion">Modelos de referencia</h3>
+      <span class="hw-conteo" id="hwConteo"></span>
+    </div>
+    <div class="hw-filtros" id="hwFiltros" role="tablist"></div>
+    <div class="hw-grid" id="hwGrid"></div>
+    <div class="hw-mas"><button class="btn btn--claro" id="hwMas">Ver más modelos</button></div>
+  </div>
+
+  <div class="contenedor hw-catalogo" id="catalogo">
+    <div class="eyebrow hw-eyebrow">Catálogo completo</div>
+    <h3 class="titulo-seccion">Catálogo interactivo</h3>
+    <p>Hojea el catálogo con fotos de cada modelo en vista frontal y lateral.</p>
+    <div class="hw-iframe">
+      <iframe src='https://simplebooklet.com/embed.php?wpKey=xqGFIGLyfODVxZFVClnPXJ&source=embed' allowfullscreen width='100%' height='650' style='border: 0; overflow: hidden; width: 1px; min-width: 100%; max-width:1012px;' scrolling='no' title="Catálogo Halloween Edition"></iframe>
+    </div>
   </div>
 </section>
 
@@ -101,7 +139,7 @@
   <div class="editorial-texto">
     <div class="eyebrow" style="color:var(--acento)">La ciencia de la mirada</div>
     <h2>Diseñados para verse.<br>Hechos para sentirse.</h2>
-    <p>Cada lente NADIA combina materiales de alta permeabilidad al oxígeno con un diseño de borde ultrafino, para una visión nítida y una comodidad que casi no notarás.</p>
+    <p>Cada lente LUMIÈRE combina materiales de alta permeabilidad al oxígeno con un diseño de borde ultrafino, para una visión nítida y una comodidad que casi no notarás.</p>
     <div class="beneficios">
       <div><strong>98%</strong><span>Oxígeno</span></div>
       <div><strong>16 h</strong><span>Hidratación</span></div>
@@ -131,7 +169,7 @@
           <a href="#" aria-label="TikTok"><svg viewBox="0 0 24 24"><path d="M16 2h-3v13.5a2.5 2.5 0 11-2.5-2.5V10a5.5 5.5 0 105.5 5.5V8.5A7 7 0 0020 10V7a4 4 0 01-4-4V2z"/></svg></a>
         </div>
       </div>
-      <div><h5>Explora</h5><ul><li><a href="#coleccion">Colección</a></li><li><a href="#tipos">Tipos de lente</a></li><li><a href="#tecnologia">Tecnología</a></li><li><a href="#tonos">Tonos</a></li></ul></div>
+      <div><h5>Explora</h5><ul><li><a href="#coleccion">Colección</a></li><li><a href="#halloween">Halloween</a></li><li><a href="#tipos">Tipos de lente</a></li><li><a href="#tecnologia">Tecnología</a></li><li><a href="#tonos">Tonos</a></li></ul></div>
       <div><h5>Contacto</h5><ul><li><a href="mailto:hola@tumarca.com">hola@tumarca.com</a></li><li><a href="#">Instagram</a></li><li><a href="#">WhatsApp</a></li></ul></div>
       <div><h5>Legal</h5><ul><li><a href="#">Aviso de privacidad</a></li><li><a href="#">Uso bajo prescripción</a></li></ul></div>
     </div>
@@ -195,6 +233,54 @@ productos.forEach(p=>{
   grid.appendChild(el);
 });
 
+/* ---------- Halloween Edition ----------
+   Para agregar o quitar modelos edita esta lista: [código, nombre].
+   La imagen de cada uno está en img/halloween/F#.jpg */
+const hwNombres=['White Out','Yellow Out','Black Out','Red Out','White Hypnotic','Jaguar','Yellow Cat','White Cat','Red Cat','Ice Fire',
+'Red Manson','Black Wolf','Red Wolf','Blue Star','Devil','Manson','Spiral','Knock Out','Zoom In','Zebra',
+'Devil Green','Vampire','New White','Spider','Pink Star','Purple Cat','Sh L3','Sh M1','Sh M3','Sh K1',
+'Eclipse','Volturi','Twilight','Bloodshot','Cyborg','Darth Maul','Mad Hatter','Zombie Red','Pink Out','Wolf',
+'Blood','Sh S1','Bullet','Green Cat','Hulk','Virus','Hell','Cyber Yellow','Humanoid','Psycho Red',
+'White Swirl','Love Pink','Cyber White','Hurricane Black','Cyber Red','Goblin Gray','Murder White','Goblin Red','Goblin Yellow','Saw White',
+'Red Veins','Murder Yellow','Screen Black','Yellow Manson','Screen White','Demon Hunters','Manson Blue','Vampire Red','Rinnegan','Splash Blood',
+'Screen Red','Yellow Ring','Black Explosion','Blue Explosion','Red Burst','Yellow Sun','Bloody Eye','Red Target','Red Halo','Red Storm',
+'New Iris Dark','Iris Light','Iris Dark','Pupil Iris','Iris Medium','Black','Extra D. Brown','New Iris Light','New Iris Medium','New Iris Black',
+'Iris Gray','Iris UltraLight','White Out','Black Sclera','Dracul','Warlock','Red Out','Black Out','Red Out','F0-20',
+'WB-156','White Blood Shoot','Twilight Werewolf','The Dart Maul'];
+// Grupos según el catálogo
+function hwGrupo(n){
+  if(n<=66) return {id:'fantasia',info:''};
+  if(n<=70) return {id:'iris',info:'14.5 mm'};
+  if(n<=81) return {id:'iris',info:n>=79?'15.01 mm':'15.0 mm'};
+  if(n<=92) return {id:'natural',info:'Protésico'};
+  if(n<=97) return {id:'esclera',info:'22 mm'};
+  return {id:'17mm',info:'17 mm'};
+}
+const hwFiltros=[['todos','Todos'],['fantasia','Fantasía'],['iris','Iris grande'],['natural','Iris natural'],['esclera','Esclera 22 mm'],['17mm','17 mm']];
+const hwLentes=hwNombres.map((nombre,i)=>({codigo:'F'+(i+1),nombre,...hwGrupo(i+1)}));
+const hwGrid=document.getElementById('hwGrid'),hwMas=document.getElementById('hwMas'),hwConteo=document.getElementById('hwConteo');
+const HW_PASO=window.innerWidth<768?12:24;let hwFiltro='todos',hwVisibles=HW_PASO;
+
+document.getElementById('hwFiltros').innerHTML=hwFiltros.map(([id,txt])=>
+  `<button class="hw-chip${id==='todos'?' activo':''}" data-f="${id}">${txt}</button>`).join('');
+document.getElementById('hwFiltros').addEventListener('click',e=>{
+  const b=e.target.closest('.hw-chip');if(!b)return;
+  document.querySelectorAll('.hw-chip').forEach(x=>x.classList.remove('activo'));
+  b.classList.add('activo');hwFiltro=b.dataset.f;hwVisibles=HW_PASO;hwPintar();
+});
+hwMas.onclick=()=>{hwVisibles+=HW_PASO;hwPintar()};
+
+function hwPintar(){
+  const lista=hwLentes.filter(l=>hwFiltro==='todos'||l.id===hwFiltro);
+  hwGrid.innerHTML=lista.slice(0,hwVisibles).map(l=>`
+    <figure class="hw-lente">
+      <div class="hw-img"><img src="img/halloween/${l.codigo}.jpg" alt="Lente ${l.nombre}" loading="lazy"></div>
+      <figcaption><span class="hw-codigo">${l.codigo}</span><span class="hw-nombre">${l.nombre}</span>${l.info?`<span class="hw-info">${l.info}</span>`:''}</figcaption>
+    </figure>`).join('');
+  hwConteo.textContent=`${Math.min(hwVisibles,lista.length)} de ${lista.length} modelos`;
+  hwMas.parentElement.style.display=lista.length>hwVisibles?'':'none';
+}
+hwPintar();
 </script>
 </body>
 </html>

@@ -181,3 +181,76 @@ footer a:hover{color:var(--blanco)}
   .footer-grid{grid-template-columns:1fr}
   .beneficios{grid-template-columns:1fr 1fr 1fr;gap:10px}
 }
+
+/* =========================================================
+   HALLOWEEN EDITION
+   ========================================================= */
+:root{
+  --hw-fondo:#0b0707;
+  --hw-panel:#140d0d;
+  --hw-rojo:#b3121b;
+  --hw-rojo-claro:#e0303a;
+  --hw-texto:#efe6e2;
+  --hw-gris:#9a8f8c;
+}
+a.anuncio{display:block}
+a.anuncio:hover{text-decoration:underline}
+nav.principal a.nav-halloween{color:var(--hw-rojo)}
+nav.principal a.nav-halloween:hover{border-color:var(--hw-rojo)}
+.btn--rojo{background:var(--hw-rojo);border-color:var(--hw-rojo);color:#fff}
+.btn--rojo:hover{background:transparent;color:var(--hw-rojo-claro);border-color:var(--hw-rojo-claro)}
+
+.halloween{background:var(--hw-fondo);color:var(--hw-texto);scroll-margin-top:110px}
+.halloween .titulo-seccion{color:var(--hw-texto)}
+.hw-eyebrow{color:var(--hw-rojo-claro);opacity:1}
+
+/* Banner */
+.hw-banner{display:grid;grid-template-columns:1.1fr 1fr;min-height:620px}
+.hw-foto{position:relative;overflow:hidden}
+.hw-foto img{width:100%;height:100%;object-fit:cover;object-position:center 30%}
+.hw-foto::after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,transparent 60%,var(--hw-fondo))}
+.hw-intro{display:flex;flex-direction:column;justify-content:center;padding:clamp(40px,6vw,96px)}
+.hw-intro h2{font-family:var(--serif);font-weight:300;font-size:clamp(48px,6vw,92px);line-height:.95;margin-bottom:24px}
+.hw-intro h2 em{color:var(--hw-rojo-claro);font-style:italic}
+.hw-intro p{color:var(--hw-gris);max-width:440px;margin-bottom:32px;font-size:15px;font-weight:300}
+.hw-datos{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;border-top:1px solid #2a1c1c;padding-top:22px;margin-bottom:36px;max-width:460px}
+.hw-datos strong{display:block;font-family:var(--serif);font-size:30px;font-weight:400;color:var(--hw-texto)}
+.hw-datos span{font-size:10px;letter-spacing:.16em;text-transform:uppercase;color:var(--hw-gris)}
+.hw-intro .btn{align-self:flex-start}
+
+/* Grid de modelos */
+.hw-cuerpo{padding-top:clamp(60px,8vw,110px);padding-bottom:clamp(40px,6vw,80px)}
+.hw-conteo{font-size:11px;letter-spacing:.16em;text-transform:uppercase;color:var(--hw-gris)}
+.hw-filtros{display:flex;flex-wrap:wrap;gap:10px;margin-bottom:40px}
+.hw-chip{background:transparent;color:var(--hw-texto);border:1px solid #3a2a2a;padding:10px 18px;font-size:10px;font-weight:600;letter-spacing:.18em;text-transform:uppercase;transition:.25s}
+.hw-chip:hover{border-color:var(--hw-texto)}
+.hw-chip.activo{background:var(--hw-rojo);border-color:var(--hw-rojo);color:#fff}
+.hw-grid{display:grid;grid-template-columns:repeat(6,1fr);gap:clamp(12px,1.6vw,24px)}
+.hw-lente{margin:0;background:var(--hw-panel);border:1px solid #1f1515;padding:18px 14px 16px;text-align:center;transition:border-color .3s, transform .3s}
+.hw-lente:hover{border-color:var(--hw-rojo);transform:translateY(-4px)}
+.hw-img{aspect-ratio:1;border-radius:50%;overflow:hidden;margin:0 auto 14px;width:86%;background:#000;box-shadow:0 10px 30px rgba(0,0,0,.6)}
+.hw-img img{width:100%;height:100%;object-fit:cover;transform:scale(1.08);transition:transform .8s ease}
+.hw-lente:hover .hw-img img{transform:scale(1.08) rotate(25deg)}
+.hw-lente figcaption{display:flex;flex-direction:column;gap:2px}
+.hw-codigo{font-family:var(--serif);font-size:22px;color:var(--hw-rojo-claro);line-height:1}
+.hw-nombre{font-size:11px;font-weight:500;letter-spacing:.12em;text-transform:uppercase}
+.hw-info{font-size:10px;color:var(--hw-gris);letter-spacing:.1em}
+.hw-mas{text-align:center;margin-top:44px}
+
+/* Catálogo (iframe) */
+.hw-catalogo{text-align:center;padding-bottom:clamp(60px,9vw,120px);scroll-margin-top:110px}
+.hw-catalogo .titulo-seccion{margin-bottom:12px}
+.hw-catalogo p{color:var(--hw-gris);margin-bottom:36px}
+.hw-iframe{max-width:1012px;margin:0 auto;background:#000;border:1px solid #2a1c1c}
+
+@media (max-width:1100px){ .hw-grid{grid-template-columns:repeat(4,1fr)} }
+@media (max-width:768px){
+  .hw-banner{grid-template-columns:1fr}
+  .hw-foto{height:420px}
+  .hw-foto::after{background:linear-gradient(180deg,transparent 60%,var(--hw-fondo))}
+  .hw-grid{grid-template-columns:repeat(3,1fr)}
+}
+@media (max-width:480px){
+  .hw-grid{grid-template-columns:repeat(2,1fr)}
+  .hw-datos strong{font-size:24px}
+}
