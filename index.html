@@ -1,12 +1,64 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="es-MX">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>NADIA | Lentes de Contacto</title>
+<title>NADIA | Lentes de Contacto de Color y de Halloween</title>
+<meta name="description" content="Lentes de contacto de color y Halloween Edition: 104 diseños de efectos especiales, ojos de gato, esclera completa 22 mm, vampiros y zombies. Hechos en Corea.">
+<meta name="robots" content="index, follow">
+<meta name="theme-color" content="#111111">
+<link rel="canonical" href="https://www.TU-DOMINIO.com/">
+
+<!-- Open Graph / redes sociales -->
+<meta property="og:type" content="website">
+<meta property="og:locale" content="es_MX">
+<meta property="og:site_name" content="NADIA">
+<meta property="og:title" content="NADIA | Lentes de Contacto de Color y de Halloween">
+<meta property="og:description" content="104 diseños de lentes de efectos especiales para Halloween y lentes de color para todos los días.">
+<meta property="og:url" content="https://www.TU-DOMINIO.com/">
+<meta property="og:image" content="https://www.TU-DOMINIO.com/img/halloween/banner.jpg">
+<meta property="og:image:width" content="809">
+<meta property="og:image:height" content="726">
+<meta property="og:image:alt" content="Modelo con lentes de contacto White Out de la Halloween Edition">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="NADIA | Lentes de Contacto de Color y de Halloween">
+<meta name="twitter:description" content="104 diseños de lentes de efectos especiales para Halloween y lentes de color.">
+<meta name="twitter:image" content="https://www.TU-DOMINIO.com/img/halloween/banner.jpg">
+
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+
 <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500&family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="estilos/styles.css">
+
+<!-- Datos estructurados para Google -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Store",
+      "@id": "https://www.TU-DOMINIO.com/#tienda",
+      "name": "NADIA",
+      "alternateName": "Nadia Crazy",
+      "description": "Lentes de contacto de color y lentes de efectos especiales para Halloween.",
+      "url": "https://www.TU-DOMINIO.com/",
+      "logo": "https://www.TU-DOMINIO.com/img/halloween/logo-nadia-crazy-600.png",
+      "image": "https://www.TU-DOMINIO.com/img/halloween/banner.jpg",
+      "email": "hola@tumarca.com"
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://www.TU-DOMINIO.com/#sitio",
+      "url": "https://www.TU-DOMINIO.com/",
+      "name": "NADIA",
+      "inLanguage": "es-MX",
+      "publisher": { "@id": "https://www.TU-DOMINIO.com/#tienda" }
+    }
+  ]
+}
+</script>
 </head>
 <body>
 
@@ -15,13 +67,14 @@
 
 <!-- 2. HEADER -->
 <header>
+  <h1 class="sr-only">NADIA · Lentes de contacto de color y de Halloween</h1>
   <div class="header-top">
     <div>
       <button class="icono-btn menu-toggle" aria-label="Abrir menú" onclick="document.querySelector('nav.principal').classList.toggle('abierto')">
         <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M3 6h18M3 12h18M3 18h18"/></svg>
       </button>
     </div>
-    <a href="#" class="logo">NADIA</a>
+    <a href="./" class="logo" aria-label="NADIA, inicio">NADIA</a>
     <div class="utilidades">
       <a href="#contacto" class="txt">Contacto</a>
       <a href="#" class="icono-btn" aria-label="Instagram"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r=".8" fill="currentColor"/></svg></a>
@@ -39,13 +92,14 @@
   </nav>
 </header>
 
+<main>
 <!-- 3. HERO CARRUSEL -->
 <section class="hero" aria-label="Destacados">
   <div class="slide s1 activo">
     <div class="fondo"></div><div class="iris"></div>
     <div class="hero-texto">
       <div class="eyebrow">Nueva colección</div>
-      <h1>Ámbar Noir</h1>
+      <h2>Ámbar Noir</h2>
       <p>Tonos miel y avellana que transforman la mirada con un acabado natural.</p>
       <a href="#coleccion" class="btn btn--claro">Descubrir</a>
     </div>
@@ -54,7 +108,7 @@
     <div class="fondo"></div><div class="iris"></div>
     <div class="hero-texto">
       <div class="eyebrow">Hidratación 16 h</div>
-      <h1>Azul Glaciar</h1>
+      <h2>Azul Glaciar</h2>
       <p>Comodidad absoluta de la mañana a la noche, con tecnología de silicona hidrogel.</p>
       <a href="#coleccion" class="btn btn--claro">Descubrir</a>
     </div>
@@ -63,7 +117,7 @@
     <div class="fondo"></div><div class="iris"></div>
     <div class="hero-texto">
       <div class="eyebrow">Visión esencial</div>
-      <h1>Claridad Diaria</h1>
+      <h2>Claridad Diaria</h2>
       <p>Lentes de uso diario, desechables y ultradelgados. Ponlos y olvídate.</p>
       <a href="#coleccion" class="btn btn--claro">Descubrir</a>
     </div>
@@ -89,9 +143,9 @@
 <!-- 4. HALLOWEEN EDITION -->
 <section class="halloween" id="halloween">
   <div class="hw-banner">
-    <div class="hw-foto"><img src="img/halloween/banner.jpg" alt="Modelo con lentes de contacto White Out"></div>
+    <div class="hw-foto"><img src="img/halloween/banner.jpg" alt="Modelo con lentes de contacto de Halloween White Out de esclera completa" width="809" height="726" loading="lazy"></div>
     <div class="hw-intro">
-      <img class="hw-logo" src="img/halloween/logo-nadia-crazy.png" alt="Nadia Crazy · Halloween Edition" width="300" height="108">
+      <img class="hw-logo" src="img/halloween/logo-nadia-crazy-600.png" alt="Nadia Crazy · Halloween Edition" width="300" height="108" loading="lazy">
       <div class="eyebrow hw-eyebrow">Edición especial</div>
       <h2>Halloween<br><em>Edition</em></h2>
       <p>Diseños de efectos especiales para transformar tu mirada: ojos de gato, esclera completa, vampiros, zombies y más. Hechos en Corea.</p>
@@ -119,7 +173,7 @@
     <h3 class="titulo-seccion">Catálogo interactivo</h3>
     <p>Hojea el catálogo con fotos de cada modelo en vista frontal y lateral.</p>
     <div class="hw-iframe">
-      <iframe src='https://simplebooklet.com/embed.php?wpKey=xqGFIGLyfODVxZFVClnPXJ&source=embed' allowfullscreen width='100%' height='650' style='border: 0; overflow: hidden; width: 1px; min-width: 100%; max-width:1012px;' scrolling='no' title="Catálogo Halloween Edition"></iframe>
+      <iframe loading="lazy" src='https://simplebooklet.com/embed.php?wpKey=xqGFIGLyfODVxZFVClnPXJ&source=embed' allowfullscreen width='100%' height='650' style='border: 0; overflow: hidden; width: 1px; min-width: 100%; max-width:1012px;' scrolling='no' title="Catálogo Halloween Edition"></iframe>
     </div>
   </div>
 </section>
@@ -156,6 +210,8 @@
   <div><h4>Verde Jade</h4><span>Tono</span></div>
   <div><h4>Avellana</h4><span>Tono</span></div>
 </section>
+
+</main>
 
 <!-- 8. FOOTER / CONTACTO -->
 <footer id="contacto">
@@ -275,7 +331,7 @@ function hwPintar(){
   const lista=hwLentes.filter(l=>hwFiltro==='todos'||l.id===hwFiltro);
   hwGrid.innerHTML=lista.slice(0,hwVisibles).map(l=>`
     <figure class="hw-lente">
-      <div class="hw-img"><img src="img/halloween/${l.codigo}.jpg" alt="Lente ${l.nombre}" loading="lazy"></div>
+      <div class="hw-img"><img src="img/halloween/${l.codigo}.jpg" alt="Lente de contacto de Halloween ${l.nombre} (${l.codigo})" width="320" height="320" loading="lazy" decoding="async"></div>
       <figcaption><span class="hw-codigo">${l.codigo}</span><span class="hw-nombre">${l.nombre}</span>${l.info?`<span class="hw-info">${l.info}</span>`:''}</figcaption>
     </figure>`).join('');
   hwConteo.textContent=`${Math.min(hwVisibles,lista.length)} de ${lista.length} modelos`;
