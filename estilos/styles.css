@@ -261,3 +261,10 @@ nav.principal a.nav-halloween:hover{border-color:var(--hw-rojo)}
 
 /* SEO: texto solo para buscadores y lectores de pantalla */
 .sr-only{position:absolute!important;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}
+
+/* Rendimiento: portada del catálogo (el visor se carga al hacer clic) */
+.hw-libro-btn{position:relative;display:block;width:100%;height:650px;padding:0;border:0;background:#000;cursor:pointer;overflow:hidden}
+.hw-libro-btn img{width:100%;height:100%;object-fit:cover;opacity:.55;transition:opacity .3s}
+.hw-libro-btn:hover img{opacity:.75}
+.hw-libro-btn .btn{position:absolute;left:50%;top:50%;transform:translate(-50%,-50%)}
+@media (max-width:767px){.hw-libro-btn{height:420px}}

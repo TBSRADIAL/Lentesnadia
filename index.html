@@ -30,7 +30,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500&family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="estilos/styles.css?v=2">
+<link rel="stylesheet" href="estilos/styles.css?v=3">
 
 <!-- Datos estructurados para Google -->
 <script type="application/ld+json">
@@ -46,7 +46,6 @@
       "url": "https://lentesdecontactonadia.com/",
       "logo": "https://lentesdecontactonadia.com/img/halloween/logo-nadia-crazy-600.png",
       "image": "https://lentesdecontactonadia.com/img/halloween/banner.jpg",
-      "email": "hola@tumarca.com",
       "telephone": "+52 664 798 3274",
       "sameAs": ["https://www.instagram.com/nadialentesdecontacto.mx/"]
     },
@@ -145,9 +144,9 @@
 <!-- 4. HALLOWEEN EDITION -->
 <section class="halloween" id="halloween">
   <div class="hw-banner">
-    <div class="hw-foto"><img src="img/halloween/banner.jpg" alt="Modelo con lentes de contacto de Halloween White Out de esclera completa" width="809" height="726" loading="lazy"></div>
+    <div class="hw-foto"><img src="img/halloween/banner.webp" alt="Modelo con lentes de contacto de Halloween White Out de esclera completa" width="809" height="726" loading="lazy"></div>
     <div class="hw-intro">
-      <img class="hw-logo" src="img/halloween/logo-nadia-crazy-600.png" alt="Nadia Crazy · Halloween Edition" width="300" height="108" loading="lazy">
+      <img class="hw-logo" src="img/halloween/logo-nadia-crazy.webp" alt="Nadia Crazy · Halloween Edition" width="300" height="108" loading="lazy">
       <div class="eyebrow hw-eyebrow">Edición especial</div>
       <h2>Halloween<br><em>Edition</em></h2>
       <p>Diseños de efectos especiales para transformar tu mirada: ojos de gato, esclera completa, vampiros, zombies y más. Hechos en Corea.</p>
@@ -174,8 +173,11 @@
     <div class="eyebrow hw-eyebrow">Catálogo completo</div>
     <h3 class="titulo-seccion">Catálogo interactivo</h3>
     <p>Hojea el catálogo con fotos de cada modelo en vista frontal y lateral.</p>
-    <div class="hw-iframe">
-      <iframe loading="lazy" src='https://simplebooklet.com/embed.php?wpKey=xqGFIGLyfODVxZFVClnPXJ&source=embed' allowfullscreen width='100%' height='650' style='border: 0; overflow: hidden; width: 1px; min-width: 100%; max-width:1012px;' scrolling='no' title="Catálogo Halloween Edition"></iframe>
+    <div class="hw-iframe" id="hwLibro">
+      <button type="button" class="hw-libro-btn" id="hwLibroBtn" aria-label="Abrir el catálogo interactivo Halloween Edition">
+        <img src="img/halloween/banner.webp" alt="" width="809" height="726" loading="lazy" decoding="async">
+        <span class="btn btn--rojo">Abrir catálogo</span>
+      </button>
     </div>
   </div>
 </section>
@@ -229,7 +231,7 @@
         </div>
       </div>
       <div><h5>Explora</h5><ul><li><a href="#coleccion">Colección</a></li><li><a href="#halloween">Halloween</a></li><li><a href="#tipos">Tipos de lente</a></li><li><a href="#tecnologia">Tecnología</a></li><li><a href="#tonos">Tonos</a></li></ul></div>
-      <div><h5>Contacto</h5><ul><li><a href="mailto:hola@tumarca.com">hola@tumarca.com</a></li><li><a href="https://www.instagram.com/nadialentesdecontacto.mx/" target="_blank" rel="noopener">Instagram</a></li><li><a href="https://wa.me/526647983274" target="_blank" rel="noopener" aria-label="Escríbenos por WhatsApp al +52 664 798 3274">WhatsApp: 664 798 3274</a></li></ul></div>
+      <div><h5>Contacto</h5><ul><li><a href="https://wa.me/526647983274" target="_blank" rel="noopener" aria-label="Escríbenos por WhatsApp al +52 664 798 3274">WhatsApp: 664 798 3274</a></li></ul></div>
       <div><h5>Legal</h5><ul><li><a href="#">Aviso de privacidad</a></li><li><a href="#">Uso bajo prescripción</a></li></ul></div>
     </div>
     <div class="footer-bajo">
@@ -333,13 +335,18 @@ function hwPintar(){
   const lista=hwLentes.filter(l=>hwFiltro==='todos'||l.id===hwFiltro);
   hwGrid.innerHTML=lista.slice(0,hwVisibles).map(l=>`
     <figure class="hw-lente">
-      <div class="hw-img"><img src="img/halloween/${l.codigo}.jpg" alt="Lente de contacto de Halloween ${l.nombre} (${l.codigo})" width="320" height="320" loading="lazy" decoding="async"></div>
+      <div class="hw-img"><img src="img/halloween/${l.codigo}.webp" alt="Lente de contacto de Halloween ${l.nombre} (${l.codigo})" width="320" height="320" loading="lazy" decoding="async"></div>
       <figcaption><span class="hw-codigo">${l.codigo}</span><span class="hw-nombre">${l.nombre}</span>${l.info?`<span class="hw-info">${l.info}</span>`:''}</figcaption>
     </figure>`).join('');
   hwConteo.textContent=`${Math.min(hwVisibles,lista.length)} de ${lista.length} modelos`;
   hwMas.parentElement.style.display=lista.length>hwVisibles?'':'none';
 }
 hwPintar();
+
+/* ---------- Catálogo: carga el visor solo cuando lo piden ---------- */
+document.getElementById('hwLibroBtn').onclick=()=>{
+  document.getElementById('hwLibro').innerHTML='<iframe src="https://simplebooklet.com/embed.php?wpKey=xqGFIGLyfODVxZFVClnPXJ&source=embed" allowfullscreen width="100%" height="650" style="border:0;overflow:hidden;width:1px;min-width:100%;max-width:1012px" scrolling="no" title="Catálogo Halloween Edition"></iframe>';
+};
 </script>
 </body>
 </html>
